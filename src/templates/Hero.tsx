@@ -1,47 +1,71 @@
 import Link from 'next/link';
-import { Background } from '../components/background/Background';
+
 import { Button } from '../components/button/Button';
-import { HeroOneButton } from '../components/hero/HeroOneButton';
-import { Section } from '../layout/Section';
+import { VerticalFeatureRow } from '../components/feature/VerticalFeatureRow';
 import { NavbarTwoColumns } from '../components/navigation/NavbarTwoColumns';
+import { Section } from '../layout/Section';
 import { Logo } from './Logo';
 
 const Hero = () => (
-  <Background color="bg-gray-100">
+  <div>
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
-        <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            <a>GitHub</a>
+        <li className="font-extrabold">
+          <Link href="/">
+            <a>HOME</a>
           </Link>
         </li>
-        <li>
+        <li className="font-extrabold">
           <Link href="/">
-            <a>Sign in</a>
+            <a>RAFFLES</a>
           </Link>
+        </li>
+        <li className="font-extrabold">
+          <Link href="/">
+            <a>ORDER NOW</a>
+          </Link>
+        </li>
+        <li className="font-extrabold">
+          <Button xl color_state={true}>
+            CONNECT WALLET
+          </Button>
         </li>
       </NavbarTwoColumns>
     </Section>
 
-    <Section yPadding="pt-20 pb-32">
-      <HeroOneButton
+    <Section yPadding="pb-20 pt-5">
+      <VerticalFeatureRow
         title={
           <>
-            {'The modern landing page for\n'}
-            <span className="text-primary-500">React developers</span>
+            {'MAKE YOUR NFT\n'}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-green-300">
+              TRULY YOURS
+            </span>
           </>
         }
-        description="The easiest way to build a React landing page in seconds."
         button={
           <Link href="https://creativedesignsguru.com/category/nextjs/">
-            <a>
-              <Button xl>Download Your Free Theme</Button>
+            <a className="flex">
+              <div className="mr-1">
+                <Button color_state={false} xl>
+                  FIND OUT HOW
+                </Button>
+              </div>
+              <div className="ml-1">
+                <Button color_state={true} xl>
+                  ORDER NOW ➜
+                </Button>
+              </div>
             </a>
           </Link>
         }
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
+        icon="/assets/images/NFTOY_HERO_MAIN.png"
+        image="/assets/images/NFTOY-HERO_ICON.png"
+        imageAlt="First feature alt text"
       />
     </Section>
-  </Background>
+  </div>
 );
 
 export { Hero };

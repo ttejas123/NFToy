@@ -12,7 +12,7 @@ const Banner = () => (
       button={
         <Link href="https://creativedesignsguru.com/category/nextjs/">
           <a>
-            <Button>Get Started</Button>
+            <Button color_state={true}>Get Started</Button>
           </a>
         </Link>
       }

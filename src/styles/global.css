@@ -3,3 +3,14 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.font-style-arimo{
+  font-family: 'Arimo', sans-serif;
+}
+
+.font-style-Bebas{
+  font-family: 'Bebas Neue', cursive;
+}
