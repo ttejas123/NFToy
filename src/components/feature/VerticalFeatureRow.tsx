@@ -32,7 +32,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
         <div className="w-full sm:w-1/2 p-6 mx-auto">
           <img src={`${router.basePath}${props.icon}`} alt={props.imageAlt} />
         </div>
-        <h3 className="text-6xl text-gray-900 font-bold whitespace-pre-line  font-style-Bebas">
+        <h3 className="text-6xl text-gray-900 font-bold whitespace-pre-line  font-style-Bebas leading-none">
           {props.title}
         </h3>
         <div className="flex justify-center text-xl leading-9">

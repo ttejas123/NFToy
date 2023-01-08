@@ -7,11 +7,11 @@ import { Section } from '../layout/Section';
 import { Logo } from './Logo';
 
 const Hero = () => (
-  <div>
+  <div id="HOME">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li className="font-extrabold">
-          <Link href="/">
+          <Link href="HOME">
             <a>HOME</a>
           </Link>
         </li>

@@ -14,3 +14,7 @@
 .font-style-Bebas{
   font-family: 'Bebas Neue', cursive;
 }
+
+.two-color-shadow{
+  box-shadow: 5px 5px 15px #79F059, -15px -15px 5px -5px #e6e92a;
+}

@@ -7,7 +7,7 @@ interface CardProp {
   description: string;
 }
 
-const CARD = (props: CardProp) => {
+const BaseCard = (props: CardProp) => {
   const verticalFeatureClass = classNames(
     'mt-5',
     'flex',
@@ -18,14 +18,14 @@ const CARD = (props: CardProp) => {
   const router = useRouter();
   return (
     <div
-      className={`${verticalFeatureClass} flex flex-col justify-center bg-white  rounded-md`}
+      className={`${verticalFeatureClass} flex flex-col justify-center bg-white  rounded-md shadow-xl py-5`}
       style={{ minWidth: '120px' }}
     >
       <div className="w-full sm:w-11/12 text-center sm:px-5">
         <div className="w-full sm:w-1/2 p-3 mx-auto">
           <img
             src={`${router.basePath}${props.img}`}
-            className="mx-auto w-3/6"
+            className="mx-auto w-2/6"
             alt="ICON WHY_US"
           />
         </div>
@@ -36,4 +36,4 @@ const CARD = (props: CardProp) => {
   );
 };
 
-export { CARD };
+export { BaseCard };
