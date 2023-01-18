@@ -71,17 +71,17 @@ const Footer = () => (
       >
         <li>
           <Link href="#HOME">
-            <a>Home</a>
+            <a className="lineBottomAnimetion">Home</a>
           </Link>
         </li>
         <li>
           <Link href="/">
-            <a>RAFFLES</a>
+            <a className="lineBottomAnimetion">RAFFLES</a>
           </Link>
         </li>
         <li>
           <Link href="/">
-            <a>ORDER NOW</a>
+            <a className="lineBottomAnimetion">ORDER NOW</a>
           </Link>
         </li>
       </CenteredFooter>

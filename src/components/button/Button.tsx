@@ -17,7 +17,9 @@ const Button = (props: IButtonProps) => {
   });
 
   return (
-    <div className={btnClass}>
+    <div
+      className={`${btnClass} transform hover:scale-105 transition ease-in-out`}
+    >
       {props.children}
 
       <style jsx>

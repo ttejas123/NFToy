@@ -7,22 +7,22 @@ import { Section } from '../layout/Section';
 import { Logo } from './Logo';
 
 const Hero = () => (
-  <div id="HOME">
+  <div id="HOME" className="overflow-hidden">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li className="font-extrabold">
           <Link href="HOME">
-            <a>HOME</a>
+            <a className="lineBottomAnimetion">HOME</a>
           </Link>
         </li>
         <li className="font-extrabold">
           <Link href="/">
-            <a>RAFFLES</a>
+            <a className="lineBottomAnimetion">RAFFLES</a>
           </Link>
         </li>
         <li className="font-extrabold">
           <Link href="/">
-            <a>ORDER NOW</a>
+            <a className="lineBottomAnimetion">ORDER NOW</a>
           </Link>
         </li>
         <li className="font-extrabold">
@@ -33,11 +33,11 @@ const Hero = () => (
       </NavbarTwoColumns>
     </Section>
 
-    <Section yPadding="pb-20 pt-5">
+    <Section yPadding="pb-20 pt-5 slide-left">
       <VerticalFeatureRow
         title={
           <>
-            {'MAKE YOUR NFT\n'}
+            <div className="heroTextAnimetion">MAKE YOUR NFT</div>
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-green-300">
               TRULY YOURS
             </span>
@@ -63,6 +63,7 @@ const Hero = () => (
         icon="/assets/images/NFTOY_HERO_MAIN.png"
         image="/assets/images/NFTOY-HERO_ICON.png"
         imageAlt="First feature alt text"
+        floatFrame="floatFrame"
       />
     </Section>
   </div>

@@ -42,10 +42,13 @@ const WHY_US = () => {
   ];
   return (
     <Background color="bg-background-highlight">
-      <div className="flex flex-wrap w-full py-12">
+      <div className="flex flex-wrap w-full py-12 overflow-hidden">
         {data.map((val: CardData, index: number) => {
           return (
-            <div className="w-full md:w-3/6 lg:w-2/6 px-5" key={index}>
+            <div
+              className="w-full md:w-3/6 lg:w-2/6 px-5 transform hover:scale-105 transition ease-in-out"
+              key={index}
+            >
               <CARD
                 description={val.description}
                 img={val.img}

@@ -32,7 +32,7 @@ const OurBuild = () => {
   return (
     <Background color="bg-background-base">
       <div className="flex flex-wrap w-full py-10 justify-center items-center">
-        <div className="w-full md:w-3/12 px-5 py-2 md:py-0">
+        <div className="w-full md:w-3/12 px-5 py-2 md:py-0 transform hover:scale-105 transition ease-in-out">
           <CARD
             key={1}
             img={data[0]?.img}
@@ -44,13 +44,13 @@ const OurBuild = () => {
           </div>
         </div>
 
-        <div className="hidden md:block md:w-[9%] px-5 py-2 md:py-0">
+        <div className="hidden md:block md:w-[9%] px-5 py-2 md:py-0 transform hover:scale-105 transition ease-in-out">
           <div className="w-12 h-12 rounded-full bg-black text-white flex justify-center items-center">
             ➜
           </div>
         </div>
 
-        <div className="w-full md:w-3/12 px-5 py-2 md:py-0">
+        <div className="w-full md:w-3/12 px-5 py-2 md:py-0 transform hover:scale-105 transition ease-in-out">
           <CARD
             key={2}
             img={data[1]?.img}
@@ -62,13 +62,13 @@ const OurBuild = () => {
           </div>
         </div>
 
-        <div className="hidden md:block md:w-[9%] px-5 py-2 md:py-0">
+        <div className="hidden md:block md:w-[9%] px-5 py-2 md:py-0 transform hover:scale-105 transition ease-in-out">
           <div className="w-12 h-12 rounded-full bg-black text-white flex justify-center items-center">
             ➜
           </div>
         </div>
 
-        <div className="w-full md:w-3/12 px-5 py-2 md:py-0">
+        <div className="w-full md:w-3/12 px-5 py-2 md:py-0 transform hover:scale-105 transition ease-in-out">
           <CARD
             key={3}
             img={data[2]?.img}

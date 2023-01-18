@@ -11,6 +11,7 @@ type IVerticalFeatureRowProps = {
   icon: string;
   imageAlt: string;
   reverse?: boolean;
+  floatFrame?: string;
 };
 
 const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
@@ -40,7 +41,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
         </div>
       </div>
 
-      <div className="w-full mt-10 sm:w-1/2 p-6">
+      <div className={`w-full mt-10 sm:w-1/2 p-6 ${props.floatFrame}`}>
         <img src={`${router.basePath}${props.image}`} alt={props.imageAlt} />
       </div>
     </div>

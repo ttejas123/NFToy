@@ -7,6 +7,7 @@ interface VerticalFeaturesProps {
   fullWidth?: boolean;
   children: ReactNode;
   description: string;
+  className?: string;
   id?: string;
 }
 
@@ -16,6 +17,7 @@ const VerticalFeatures = (props: VerticalFeaturesProps) => (
     description={props.description}
     fullWidth={props.fullWidth}
     id={props.id}
+    className={props.className}
   >
     {props.children}
   </Section>

@@ -18,3 +18,92 @@
 .two-color-shadow{
   box-shadow: 5px 5px 15px #79F059, -15px -15px 5px -5px #e6e92a;
 }
+
+/* line bottom text animetion */
+a{
+  position: relative;
+}
+
+.lineBottomAnimetion::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  position:absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000;
+  transition: width 0.3s;
+}
+
+.lineBottomAnimetion:hover::after{
+  width: 50%;
+}
+
+/* Hero text Animetion */
+.heroTextAnimetion{
+  color: transparent;
+  -webkit-text-stroke: 0.1px black;
+  background: url(../../public/assets/images/BACKGROUND/HERO_TEXT_BACKGROUD.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+
+@keyframes back{
+  100%{
+    background-position: 2000px 0;
+  }
+}
+
+/* Slide Left */
+.slide-left {
+  overflow: hidden;
+  animation: slideleft 1s alternate forwards;
+}
+
+@keyframes slideleft {
+    0%{
+        transform: translate(200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+/* side right */
+.slide-right {
+  overflow: hidden;
+  animation: slideright 1s alternate backwards;
+}
+
+@keyframes slideright {
+    0%{
+        transform: translate(-200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+/* float animetion */
+.floatFrame {
+	transform: translatey(0px);
+	animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
