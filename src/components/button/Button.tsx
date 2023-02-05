@@ -12,7 +12,7 @@ const Button = (props: IButtonProps) => {
     'font-style-Bebas': true,
     'btn-xl': props.xl,
     'btn-base': !props.xl,
-    'btn-primary': true,
+    'btn-primary': props.color_state,
     'btn-primary-rev': !props.color_state,
   });
 
@@ -45,7 +45,11 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-primary:hover {
-            @apply bg-primary-700;
+            @apply bg-primary-700 border-b border-white;
+          }
+
+          .btn-primary-rev:hover {
+            @apply bg-yellow-200;
           }
         `}
       </style>

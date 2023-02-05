@@ -2,15 +2,13 @@ import React, { useState } from 'react';
 
 import Link from 'next/link';
 
-function SideNavigator() {
+interface SideNavigatorProps {
+  contentarray: string[];
+}
+
+function SideNavigator(props: SideNavigatorProps) {
   const [active, setActive] = useState(0);
-  const links: string[] = [
-    'HOME',
-    'BUILD',
-    'WHYUS',
-    'OURWORK',
-    'TRUSTEDCOMMUNITY',
-  ];
+  const links: string[] = [...props.contentarray];
   return (
     <div className="fixed right-7 z-10 top-1/4 hidden md:block">
       {links.map((val: string, index: number) => {

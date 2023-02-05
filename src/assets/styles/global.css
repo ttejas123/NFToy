@@ -7,6 +7,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .font-style-arimo{
   font-family: 'Arimo', sans-serif;
 }
@@ -44,7 +55,7 @@ a{
 .heroTextAnimetion{
   color: transparent;
   -webkit-text-stroke: 0.1px black;
-  background: url(../../public/assets/images/BACKGROUND/HERO_TEXT_BACKGROUD.png);
+  background: url("../../../public/assets/images/BACKGROUND/HERO_TEXT_BACKGROUD.png");
   -webkit-background-clip: text;
   background-position: 0 0;
   animation: back 20s linear infinite;
@@ -106,4 +117,33 @@ a{
 	100% {
 		transform: translatey(0px);
 	}
+}
+
+/* Hue Animetion */
+.hue-animate:hover {
+  background-color: red;
+  -webkit-animation: filter-animation 2s infinite;
+  animation: filter-animation 2s infinite;
+}
+
+@-webkit-keyframes filter-animation {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  
+  25% {
+    -webkit-filter: hue-rotate(25deg);
+  }
+
+  50% {
+    -webkit-filter: hue-rotate(50deg);
+  }
+
+  75% {
+    -webkit-filter: hue-rotate(25deg);
+  }
+  
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+  }
 }

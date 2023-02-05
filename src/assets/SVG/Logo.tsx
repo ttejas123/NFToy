@@ -1,20 +1,29 @@
-import { AppConfig } from '../utils/AppConfig';
+import React from 'react';
+
+import { useRouter } from 'next/router';
+
+import { AppConfig } from '../../utils/AppConfig';
 
 type ILogoProps = {
   xl?: boolean;
+  dark?: boolean;
 };
 
 const Logo = (props: ILogoProps) => {
-  const size = props.xl ? '44' : '32';
+  const router = useRouter();
+  const size = props.xl ? 'w-12' : 'w-8';
+  const navSize = props.dark ? 'w-9' : 'w-16';
   const fontStyle = props.xl
     ? 'font-semibold text-3xl'
     : 'font-semibold text-xl';
 
   return (
     <span
-      className={`text-gray-900 inline-flex items-center ${fontStyle} ${AppConfig.className}`}
+      className={`${
+        props.dark ? 'text-gray-900' : 'text-white'
+      } inline-flex items-center ${fontStyle} ${AppConfig.className}`}
     >
-      <svg
+      {/* <svg
         className="text-primary-500 stroke-current mr-1"
         xmlns="http://www.w3.org/2000/svg"
         width={size}
@@ -30,7 +39,11 @@ const Logo = (props: ILogoProps) => {
         <rect x="9" y="8" width="6" height="12" rx="1" />
         <rect x="15" y="4" width="6" height="16" rx="1" />
         <path d="M4 20h14" />
-      </svg>
+      </svg> */}
+      <img
+        src={`${router.basePath}/assets/images/NFTOY_HERO_MAIN-YELLOW.png`}
+        className={`${size} ${navSize} transition-all mr-3`}
+      />
 
       {AppConfig.site_name}
     </span>

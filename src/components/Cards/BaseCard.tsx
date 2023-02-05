@@ -8,17 +8,12 @@ interface CardProp {
 }
 
 const BaseCard = (props: CardProp) => {
-  const verticalFeatureClass = classNames(
-    'mt-5',
-    'flex',
-    'flex-wrap',
-    'items-center'
-  );
+  const verticalFeatureClass = classNames('flex', 'flex-wrap', 'items-center');
 
   const router = useRouter();
   return (
     <div
-      className={`${verticalFeatureClass} flex flex-col justify-center bg-white  rounded-md shadow-xl py-5`}
+      className={`${verticalFeatureClass} flex flex-col justify-center bg-white  rounded-md shadow-xl m-2 p-5`}
       style={{ minWidth: '120px' }}
     >
       <div className="w-full sm:w-11/12 text-center sm:px-5">

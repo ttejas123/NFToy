@@ -12,14 +12,16 @@ type IVerticalFeatureRowProps = {
   imageAlt: string;
   reverse?: boolean;
   floatFrame?: string;
+  bgRight?: string;
 };
 
 const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
   const verticalFeatureClass = className(
-    'mt-20',
+    'mt-32',
     'flex',
     'flex-wrap',
     'items-center',
+    'relative',
     {
       'flex-row-reverse': props.reverse,
     }
@@ -28,22 +30,37 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
   const router = useRouter();
 
   return (
-    <div className={`${verticalFeatureClass}`}>
-      <div className="w-full sm:w-1/2 text-center sm:px-6">
-        <div className="w-full sm:w-1/2 p-6 mx-auto">
-          <img src={`${router.basePath}${props.icon}`} alt={props.imageAlt} />
+    <div className="relative">
+      <div className={`${verticalFeatureClass}`}>
+        <div className="w-full sm:w-1/2 text-center sm:px-6">
+          {props.icon && (
+            <div className="w-full sm:w-1/2 p-6 mx-auto">
+              <img
+                src={`${router.basePath}${props.icon}`}
+                alt={props.imageAlt}
+              />
+            </div>
+          )}
+          <h3 className="text-6.5xl  flex flex-col justify-start items-start w-full font-bold whitespace-pre-line  font-style-Bebas leading-none">
+            {props.title}
+          </h3>
+          <div className="flex justify-start text-xl leading-9 w-full">
+            {props.button}
+          </div>
         </div>
-        <h3 className="text-6xl text-gray-900 font-bold whitespace-pre-line  font-style-Bebas leading-none">
-          {props.title}
-        </h3>
-        <div className="flex justify-center text-xl leading-9">
-          {props.button}
-        </div>
-      </div>
 
-      <div className={`w-full mt-10 sm:w-1/2 p-6 ${props.floatFrame}`}>
-        <img src={`${router.basePath}${props.image}`} alt={props.imageAlt} />
+        <div className={`${props.floatFrame}`}>
+          <img
+            src={`${router.basePath}${props.image}`}
+            alt={props.imageAlt}
+            className="w-96"
+          />
+        </div>
       </div>
+      <img
+        src={`${router.basePath}${props.bgRight}`}
+        className=" absolute w-80 -z-50 -top-10 -right-7"
+      />
     </div>
   );
 };

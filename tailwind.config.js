@@ -12,12 +12,17 @@ module.exports = {
       '4xl': '2.25rem',
       '5xl': '3rem',
       '6xl': '4rem',
+      '6.5xl': '4.5rem',
+      '7xl': '5rem',
+      '8xl': '6rem',
     },
     extend: {
       colors: {
         background: {
           base: '#fdfff1',
+          base2: '#396500',
           highlight: '#C0C300',
+          hero: '#1D1D1D',
         },
         primary: {
           100: '#666666',

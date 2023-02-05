@@ -1,35 +1,38 @@
 import { OurBuild } from '../components/OurBuild/OurBuild';
 import { ScrollToTop } from '../components/UIComponents/ScrollToTop';
-import { WHY_US } from '../components/whyus/WHYUS';
+import { WhyUs } from '../components/whyus/WhyUsMain';
 import { Meta } from '../layout/Meta';
 import { AppConfig } from '../utils/AppConfig';
-import { Footer } from './Footer';
-import { Hero } from './Hero';
-import SideNavigator from './SideNavigator';
-import { VerticalFeatures } from './VerticalFeatures';
+import { Footer } from './BaseTemplate/Footer';
+import { Hero } from './BaseTemplate/Hero';
+import Navbar from './BaseTemplate/Navbar';
+import SideNavigator from './BaseTemplate/SideNavigator';
+import { VerticalFeatures } from './BaseTemplate/VerticalFeatures';
 
 const Base = () => (
   <div className="antialiased text-gray-600 relative scroll-smooth">
     <Meta title={AppConfig.title} description={AppConfig.description} />
+    <Navbar />
     <Hero />
-
-    <VerticalFeatures
-      id="BUILD"
-      title="OUR BUILD PROCESS"
-      description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat."
-    >
-      {/* Our Build Component Come Here */}
-      <OurBuild />
-    </VerticalFeatures>
 
     <VerticalFeatures
       fullWidth={true}
       id="WHYUS"
       title="WHY US? NFToys"
-      description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat."
+      description="NFToys offers one-of-a-kind, handcrafted toys of your favorite NFTs. 
+      Our expert blend of 3D modeling, hand painting, and traditional craftsmanship create truly special collectibles, bringing them to live."
     >
       {/* NFToys Component Come Here */}
-      <WHY_US />
+      <WhyUs />
+    </VerticalFeatures>
+
+    <VerticalFeatures
+      id="BUILD"
+      title="OUR BUILD PROCESS"
+      description="You pick your preferred NFT and place the order, we start designing the 3D model of it, print it in high quality resin and post process it. After this is done we hand it to our artists for them to curately hand paint it. We will then pack it with care and ship it as fast as possible."
+    >
+      {/* Our Build Component Come Here */}
+      <OurBuild />
     </VerticalFeatures>
 
     <VerticalFeatures
@@ -58,7 +61,9 @@ const Base = () => (
 
     <Footer />
 
-    <SideNavigator />
+    <SideNavigator
+      contentarray={['HOME', 'BUILD', 'WHYUS', 'OURWORK', 'TRUSTEDCOMMUNITY']}
+    />
     <ScrollToTop />
   </div>
 );

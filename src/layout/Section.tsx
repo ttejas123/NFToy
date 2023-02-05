@@ -10,6 +10,7 @@ type ISectionProps = {
   fullWidth?: boolean;
   children: ReactNode;
   className?: string;
+  boolAnimetion?: boolean;
   id?: string;
 };
 
@@ -26,7 +27,7 @@ const Section = (props: ISectionProps) => {
     >
       {(props.title || props.description) && (
         <div
-          data-aos="slide-left"
+          data-aos={'slide-left'}
           className={`mb-12 text-center ${
             props.fullWidth && 'max-w-screen-lg'
           } mx-auto`}

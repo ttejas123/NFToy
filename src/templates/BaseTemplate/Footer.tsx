@@ -1,11 +1,11 @@
 import Link from 'next/link';
 
-import { CenteredFooter } from '../components/footer/CenteredFooter';
-import { Section } from '../layout/Section';
-import { Logo } from './Logo';
+import { Logo } from '../../assets/SVG/Logo';
+import { CenteredFooter } from '../../components/footer/CenteredFooter';
+import { Section } from '../../layout/Section';
 
 const Footer = () => (
-  <div>
+  <div className="bg-background-hero">
     <Section>
       <CenteredFooter
         logo={<Logo />}
@@ -71,17 +71,17 @@ const Footer = () => (
       >
         <li>
           <Link href="#HOME">
-            <a className="lineBottomAnimetion">Home</a>
+            <a className="lineBottomAnimetion text-white">Home</a>
           </Link>
         </li>
         <li>
           <Link href="/">
-            <a className="lineBottomAnimetion">RAFFLES</a>
+            <a className="lineBottomAnimetion text-white">RAFFLES</a>
           </Link>
         </li>
         <li>
           <Link href="/">
-            <a className="lineBottomAnimetion">ORDER NOW</a>
+            <a className="lineBottomAnimetion text-white">ORDER NOW</a>
           </Link>
         </li>
       </CenteredFooter>
