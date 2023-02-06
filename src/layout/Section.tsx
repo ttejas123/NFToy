@@ -23,7 +23,7 @@ const Section = (props: ISectionProps) => {
       id={props.id}
       className={`${props.className} ${
         props.fullWidth ? 'w-full' : 'max-w-screen-lg px-3'
-      } mx-auto ${props.yPadding ? props.yPadding : 'py-16'} overflow-hidden`}
+      } mx-auto ${props.yPadding ? props.yPadding : 'py-16'}`}
     >
       {(props.title || props.description) && (
         <div

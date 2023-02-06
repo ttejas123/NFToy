@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
+import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 import Link from 'next/link';
 
 import { Logo } from '../../assets/SVG/Logo';
@@ -79,8 +80,8 @@ function Navbar() {
             </Link>
           </li>
           <li className="font-extrabold">
-            <Button xl color_state={styleChange}>
-              CONNECT WALLET
+            <Button xl color_state={styleChange} wallet>
+              <WalletMultiButton className="p-0 m-0 hover:text-white hover:bg-transparent" />
             </Button>
           </li>
         </NavbarTwoColumns>

@@ -8,7 +8,7 @@ import { VerticalFeatureRow } from '../feature/VerticalFeatureRow';
 
 function HeroIconWithTwoButton() {
   return (
-    <Section yPadding="slide-left ">
+    <Section yPadding="slide-left">
       <VerticalFeatureRow
         title={
           <>

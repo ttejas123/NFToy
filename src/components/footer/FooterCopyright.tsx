@@ -8,7 +8,7 @@ const FooterCopyright = () => (
     </span>{' '}
     by{' '}
     <a href="https://app.soulofox.com/myprofile" className="">
-      SoloFox Media
+      RudeTech
     </a>
     {/*
      * PLEASE READ THIS SECTION

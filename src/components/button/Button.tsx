@@ -1,9 +1,12 @@
+import { ReactNode } from 'react';
+
 import className from 'classnames';
 
 type IButtonProps = {
   xl?: boolean;
-  children: string;
+  children: ReactNode;
   color_state: boolean;
+  wallet?: boolean;
 };
 
 const Button = (props: IButtonProps) => {
@@ -14,6 +17,7 @@ const Button = (props: IButtonProps) => {
     'btn-base': !props.xl,
     'btn-primary': props.color_state,
     'btn-primary-rev': !props.color_state,
+    'wallet-style': props.wallet,
   });
 
   return (
@@ -50,6 +54,10 @@ const Button = (props: IButtonProps) => {
 
           .btn-primary-rev:hover {
             @apply bg-yellow-200;
+          }
+
+          .wallet-style {
+            @apply px-0 py-0;
           }
         `}
       </style>

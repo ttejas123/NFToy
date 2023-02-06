@@ -16,6 +16,7 @@ const Base = () => (
     <Hero />
 
     <VerticalFeatures
+      className="overflow-hidden"
       fullWidth={true}
       id="WHYUS"
       title="WHY US? NFToys"
@@ -27,6 +28,7 @@ const Base = () => (
     </VerticalFeatures>
 
     <VerticalFeatures
+      className="overflow-hidden"
       id="BUILD"
       title="OUR BUILD PROCESS"
       description="You pick your preferred NFT and place the order, we start designing the 3D model of it, print it in high quality resin and post process it. After this is done we hand it to our artists for them to curately hand paint it. We will then pack it with care and ship it as fast as possible."
@@ -36,6 +38,7 @@ const Base = () => (
     </VerticalFeatures>
 
     <VerticalFeatures
+      className="overflow-hidden"
       title="OUR WORKS OF ART"
       id="OURWORK"
       description="Arcu cursus vitae congue mauris rhoncus viverra nibh cras pulvinar mattis blandit libero cursus mattis."
@@ -48,9 +51,10 @@ const Base = () => (
     </VerticalFeatures>
 
     <VerticalFeatures
+      className="overflow-hidden"
       id="TRUSTEDCOMMUNITY"
       title="OUR TRUSTED COMMUNITES"
-      description="Arcu cursus vitae congue mauris rhoncus viverra nibh cras pulvinar mattis blandit libero cursus mattis."
+      description="We’ve already worked with some of the biggest communities in the NFT environment and some big influencers, bringing their desires to live."
     >
       <img
         src="/assets/images/NFTOY-TRUSTED_MAIN.png"
