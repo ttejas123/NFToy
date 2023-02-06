@@ -23,8 +23,8 @@ const ShopDetailWithImg = () => (
         }
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
         icon="/assets/images/NFTOY_HERO_MAIN.png"
-        image="/assets/images/NFTOY-SHOPHERO_ICON.png"
-        imageAlt="First feature alt text"
+        image="/assets/images/Toys/HERO_MAIN.png"
+        imageAlt="Stone Golem NFT"
         floatFrame="floatFrame"
       />
     </Section>

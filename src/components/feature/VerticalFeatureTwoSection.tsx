@@ -89,11 +89,11 @@ const VerticalFeatureTwoSection = (
       </div>
 
       <div
-        className={`w-full bg-green-00 sm:w-1/2 p-6 bg-yellow-100 flex items-center`}
+        className={`w-full bg-green-00 sm:w-1/2 p-6 bg-background-hero flex items-center justify-center`}
       >
         <img
           src={`${router.basePath}${props.image}`}
-          className={`${props.floatFrame}`}
+          className={`${props.floatFrame} w-4/5`}
           alt={props.imageAlt}
         />
       </div>
