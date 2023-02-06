@@ -41,7 +41,7 @@ const Base = () => (
       className="overflow-hidden"
       title="OUR WORKS OF ART"
       id="OURWORK"
-      description="Arcu cursus vitae congue mauris rhoncus viverra nibh cras pulvinar mattis blandit libero cursus mattis."
+      description="We’ve made some of the most sough after NFTs reality."
     >
       <img
         id="OURWORK"
