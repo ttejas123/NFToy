@@ -35,8 +35,13 @@ const WhyUs = () => {
   ];
   return (
     <Background color="bg-background-base">
-      <div className="flex py-5">
-        <div className="flex flex-wrap w-full sm:w-2/5 py-12 overflow-hidden"></div>
+      <div className="max-w-6xl flex flex-col-reverse lg:flex-row py-5 items-center mx-auto">
+        <div className="relative flex w-full min-h-max sm:w-2/5 py-12 overflow-hidden">
+          <img
+            src={`${router.basePath}/assets/images/NFTOY-HERO_ICON.png`}
+            className="h-full md:w-full flex justify-center items-center -z-0 -top-0 right-0 floatFrame mt-5"
+          />
+        </div>
         <div className="flex flex-wrap justify-end z-10  w-full sm:w-3/5 overflow-hidden">
           {data.map((val: CardData, index: number) => {
             return (
@@ -53,11 +58,6 @@ const WhyUs = () => {
             );
           })}
         </div>
-
-        <img
-          src={`${router.basePath}/assets/images/NFTOY-HERO_ICON.png`}
-          className="absolute w-2/5 h-full flex justify-center items-center -z-0 -top-0 left-14 floatFrame mt-5"
-        />
       </div>
     </Background>
   );
