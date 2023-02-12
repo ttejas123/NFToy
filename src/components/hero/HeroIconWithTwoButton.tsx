@@ -19,7 +19,7 @@ function HeroIconWithTwoButton() {
           </>
         }
         button={
-          <Link href="https://creativedesignsguru.com/category/nextjs/">
+          <Link href="">
             <a className="flex">
               <div className="mr-1">
                 <Button color_state={false} xl>

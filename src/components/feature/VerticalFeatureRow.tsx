@@ -41,7 +41,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
               />
             </div>
           )}
-          <h3 className="text-6.5xl  flex flex-col justify-start items-start w-full font-bold whitespace-pre-line  font-style-Bebas leading-none">
+          <h3 className="text-7xl flex flex-col justify-start items-start w-full font-bold whitespace-pre-line  font-style-Bebas leading-none">
             {props.title}
           </h3>
           <div className="flex justify-start text-xl leading-9 w-full">

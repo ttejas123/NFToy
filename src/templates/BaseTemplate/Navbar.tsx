@@ -13,9 +13,10 @@ function Navbar() {
   const [styleChange, setStyleChange] = useState(false);
 
   const checkScrollYHeight = () => {
-    if (window.scrollY >= 10) {
+    if (window.scrollY > 100) {
       setStyleChange(true);
-    } else {
+    }
+    if (window.scrollY < 10) {
       setStyleChange(false);
     }
   };
@@ -31,7 +32,7 @@ function Navbar() {
   return (
     <div
       className={`sticky -top-0 z-50 ${
-        styleChange ? 'bg-background-base2' : 'bg-background-hero'
+        styleChange ? 'bg-background-hero' : 'bg-background-hero'
       }`}
     >
       <Section
