@@ -12,19 +12,19 @@ const OurBuild = () => {
   const data: CardData[] = [
     {
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      img: '/assets/images/ACTOR/2DNFTDESIGN.png',
+      img: '/assets/images/ACTOR/2DNFTAsset.jpg',
       title: 'YOUR 2D NFT',
-      color: 'bg-white',
+      color: 'bg-[#807e67]',
     },
     {
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      img: '/assets/images/ACTOR/3DNFTDESIGN.png',
+      img: '/assets/images/ACTOR/Design&Prototype.png',
       title: 'CUSTOM DESIGNED 3D',
-      color: 'bg-[#313131]',
+      color: 'bg-[#797979]',
     },
     {
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      img: '/assets/images/ACTOR/3DNFTPRINT.png',
+      img: '/assets/images/ACTOR/3DNFTBuild.jpg',
       title: '3D PRINTED & COLORED',
       color: 'bg-black',
     },

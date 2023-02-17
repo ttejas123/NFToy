@@ -6,23 +6,32 @@ const ShopDetailWithImg = () => (
   <div id="Details" className="overflow-hidden">
     <Section className="slide-left">
       <VerticalFeatureTwoSection
-        title={
-          <>
-            <div className="heroTextAnimetion">MAKE YOUR NFT</div>
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-green-300">
-              TRULY YOURS
-            </span>
-          </>
-        }
+        title="Customize your NFT"
+        priceSol={20}
+        priceDoller={150}
+        stockLeft={6}
         button={
           <a className="flex">
             <div className="mr-1">
-              <Button color_state={false}>Buy Now</Button>
+              <Button
+                onclick={() =>
+                  window.open('https://www.hel.io/pay/63c597818e1d47822ed370fc')
+                }
+                color_state={false}
+              >
+                Buy Now
+              </Button>
             </div>
           </a>
         }
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-        icon="/assets/images/NFTOY_HERO_MAIN.png"
+        supported={['Rude Golems', 'Sharks', 'Clayursours']}
+        details={[
+          '1:1 high fidelity figure.',
+          'ABS Resin.',
+          'Highly detailed painting.',
+          'Personalized secure packaging.',
+        ]}
+        description="High-quality resin figure. Hand painted with acrylic and high coverage sealer. Packed with our special NFToys Box."
         image="/assets/images/Toys/HERO_MAIN.png"
         imageAlt="Stone Golem NFT"
         floatFrame="floatFrame"

@@ -19,7 +19,7 @@ const ActorCard = (props: CardProp) => {
   return (
     <div
       className={`${verticalFeatureClass} flex flex-col justify-center ${props.color} shadow-xl two-color-shadow  rounded-md`}
-      style={{ minWidth: '100px', minHeight: '480px' }}
+      style={{ minWidth: '230px', minHeight: '230px' }}
     >
       <div className="w-full sm:w-11/12 text-center   ">
         <div className="w-full h-full">

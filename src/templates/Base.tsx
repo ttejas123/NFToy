@@ -1,4 +1,5 @@
 import { OurBuild } from '../components/OurBuild/OurBuild';
+import { OurWork } from '../components/OurWork/OurWork';
 import { ScrollToTop } from '../components/UIComponents/ScrollToTop';
 import { WhyUs } from '../components/whyus/WhyUsMain';
 import { Meta } from '../layout/Meta';
@@ -43,11 +44,7 @@ const Base = () => (
       id="OURWORK"
       description="We’ve made some of the most sough after NFTs reality."
     >
-      <img
-        id="OURWORK"
-        src="/assets/images/NFTOY-ARTWORK_MAIN.png"
-        alt="ARTWORK MAIN"
-      />
+      <OurWork />
     </VerticalFeatures>
 
     <VerticalFeatures

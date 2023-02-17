@@ -11,8 +11,7 @@ type ILogoProps = {
 
 const Logo = (props: ILogoProps) => {
   const router = useRouter();
-  const size = props.xl ? 'w-12' : 'w-8';
-  const navSize = props.dark ? 'w-9' : 'w-16';
+  const navSize = props.dark ? 'w-24' : 'w-44';
   const fontStyle = props.xl
     ? 'font-semibold text-3xl'
     : 'font-semibold text-xl';
@@ -41,11 +40,11 @@ const Logo = (props: ILogoProps) => {
         <path d="M4 20h14" />
       </svg> */}
       <img
-        src={`${router.basePath}/assets/images/NFTOY_HERO_MAIN-YELLOW.png`}
-        className={`${size} ${navSize} transition-all mr-3`}
+        src={`${router.basePath}/assets/images/IconNdTitle.png`}
+        className={`${navSize} transition-all mr-3`}
       />
 
-      {AppConfig.site_name}
+      {/* {AppConfig.site_name} */}
     </span>
   );
 };

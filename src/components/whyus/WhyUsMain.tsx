@@ -13,24 +13,28 @@ const WhyUs = () => {
   const router = useRouter();
   const data = [
     {
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      description:
+        'Skilled artists and artisans create each toy with care and attention to detail',
       img: '/assets/images/ICONS/ICON-CONTACT.png',
-      title: 'Initial Contact',
+      title: 'Craftsmanship',
     },
     {
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      description:
+        'We incorporate personal elements to make each toy a  meaningful experience',
       img: '/assets/images/ICONS/ICON-DISCOVERY.png',
-      title: 'Discovery Session',
+      title: 'Personal Touch',
     },
     {
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      description:
+        'Our fast prototyping process allows us to bring your ideas to life quickly.',
       img: '/assets/images/ICONS/ICON-PROTOTYPING.png',
       title: 'Fast Prototyping',
     },
     {
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      description:
+        'We have the ability to turn 2D NFTs into amazing figurines.',
       img: '/assets/images/ICONS/ICON_DESIGN.png',
-      title: 'Design Phase',
+      title: '2D to 3D',
     },
   ];
   return (

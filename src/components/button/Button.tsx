@@ -7,6 +7,7 @@ type IButtonProps = {
   children: ReactNode;
   color_state: boolean;
   wallet?: boolean;
+  onclick?: React.MouseEventHandler<HTMLDivElement>;
 };
 
 const Button = (props: IButtonProps) => {
@@ -22,6 +23,7 @@ const Button = (props: IButtonProps) => {
 
   return (
     <div
+      onClick={props.onclick}
       className={`${btnClass} transform hover:scale-105 transition ease-in-out`}
     >
       {props.children}

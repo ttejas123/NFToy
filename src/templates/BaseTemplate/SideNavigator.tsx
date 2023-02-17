@@ -16,7 +16,7 @@ function SideNavigator(props: SideNavigatorProps) {
           <Link href={`#${val}`} key={index}>
             <div
               onClick={() => setActive(index)}
-              className="border border-black rounded-full w-4 h-4 flex justify-center items-center my-2 cursor-pointer"
+              className="border border-yellow-400 border-2 rounded-full w-4 h-4 flex justify-center items-center my-2 cursor-pointer"
             >
               <div
                 className={`${

@@ -3,17 +3,19 @@ import { ReactNode } from 'react';
 import className from 'classnames';
 import { useRouter } from 'next/router';
 
-import TitleNDescription from '../Cards/TitleNDescription';
-
 type IVerticalFeatureTwoSelectionProps = {
   title: ReactNode;
   button: ReactNode;
   description: string;
   image: string;
-  icon: string;
   imageAlt: string;
+  priceDoller: number;
+  priceSol: number;
+  stockLeft: number;
   reverse?: boolean;
   floatFrame?: string;
+  supported?: string[];
+  details?: string[];
 };
 
 const VerticalFeatureTwoSection = (
@@ -27,59 +29,40 @@ const VerticalFeatureTwoSection = (
 
   return (
     <div className={`${verticalFeatureClass}`}>
-      <div className="w-full sm:w-1/2 sm:px-6 sm:py-6">
+      <div className="w-full sm:w-1/2 sm:px-6 sm:py-6 flex justify-center flex-col">
         <div className="w-full ">
           <h1 className="text-3xl whitespace-pre-line font-bold text-black font-style-Bebas leading-none">
-            Customize your NFT
+            {props.title}
           </h1>
           <div className="flex font-extrabold text-black py-3">
-            <div className=" border-x-gray-500 border-r-2 pr-3">$150</div>
-            <div className=" border-x-gray-500 border-r-2 px-3">20 SOL</div>
-            <div className="px-3 text-red-600">6 Left</div>
+            <div className=" border-x-gray-500 border-r-2 pr-3">
+              ${props.priceDoller}
+            </div>
+            <div className=" border-x-gray-500 border-r-2 px-3">
+              {props.priceSol} SOL
+            </div>
+            <div className="px-3 text-red-600">{props.stockLeft} Left</div>
           </div>
-          <div className="w-10/12 text-sm">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur excepteur sint occaecat
-            cupidatat.
-          </div>
+          <div className="w-10/12 text-sm">{props.description}</div>
         </div>
         <div className="py-3 text-gray-600">
           <div className="text-md font-bold font-style-Bebas text-zinc-600">
             Supported Collection:
           </div>
-          <li className="ml-3 text-sm">Rude Golems</li>
-          <li className="ml-3 text-sm">Sharks</li>
-          <li className="ml-3 text-sm">Clayursours</li>
+          {props.supported?.map((val, index) => (
+            <li key={index} className="ml-3 text-sm">
+              {val}
+            </li>
+          ))}
         </div>
         <div className="pb-3 text-gray-600">
           <div className="text-md font-style-Bebas font-bold text-zinc-600">
             Details:
           </div>
-          <div className="w-10/12 text-sm">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur excepteur sint occaecat
-            cupidatat.
-          </div>
-        </div>
-
-        <div className="pb-3 text-gray-600">
-          <div className="text-md font-style-Bebas font-bold text-zinc-600">
-            Details:
-          </div>
-          <div className="w-full md:flex md:overflow-x-auto scroll-smooth scrollbar-hide">
-            <TitleNDescription
-              title="Normal"
-              description="Duis aute irure dolor in reprehenderit in voluptate velit esse"
-              selected={true}
-            />
-            <TitleNDescription
-              title="Glowing"
-              description="Duis aute irure dolor in reprehenderit in voluptate velit esse"
-            />
-            <TitleNDescription
-              title="Normal Normal"
-              description="Duis aute irure dolor in reprehenderit in voluptate velit esse"
-            />
+          <div className="w-10/12 text-sm ml-3">
+            {props.details?.map((val, index) => (
+              <li key={index}>{val}</li>
+            ))}
           </div>
         </div>
 
