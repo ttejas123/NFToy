@@ -1,14 +1,14 @@
+import { Footer } from './BaseTemplate/Footer';
+import { Hero } from './BaseTemplate/Hero';
+import Navbar from './BaseTemplate/Navbar';
+import SideNavigator from './BaseTemplate/SideNavigator';
+import { VerticalFeatures } from './BaseTemplate/VerticalFeatures';
 import { OurBuild } from '../components/OurBuild/OurBuild';
 import { OurWork } from '../components/OurWork/OurWork';
 import { ScrollToTop } from '../components/UIComponents/ScrollToTop';
 import { WhyUs } from '../components/whyus/WhyUsMain';
 import { Meta } from '../layout/Meta';
 import { AppConfig } from '../utils/AppConfig';
-import { Footer } from './BaseTemplate/Footer';
-import { Hero } from './BaseTemplate/Hero';
-import Navbar from './BaseTemplate/Navbar';
-import SideNavigator from './BaseTemplate/SideNavigator';
-import { VerticalFeatures } from './BaseTemplate/VerticalFeatures';
 
 const Base = () => (
   <div className="antialiased text-gray-600 relative scroll-smooth">
