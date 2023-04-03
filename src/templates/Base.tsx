@@ -9,7 +9,7 @@ import { ScrollToTop } from '../components/UIComponents/ScrollToTop';
 import { WhyUs } from '../components/whyus/WhyUsMain';
 import { Meta } from '../layout/Meta';
 import { AppConfig } from '../utils/AppConfig';
-
+// import mismatch
 const Base = () => (
   <div className="antialiased text-gray-600 relative scroll-smooth">
     <Meta title={AppConfig.title} description={AppConfig.description} />
