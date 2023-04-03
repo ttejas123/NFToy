@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { ScrollToTop } from '../components/UIComponents/ScrollToTop';
-import { Meta } from '../layout/Meta';
-import { AppConfig } from '../utils/AppConfig';
 import { Footer } from './BaseTemplate/Footer';
 import Navbar from './BaseTemplate/Navbar';
 import { ShopDetailWithImg } from './BaseTemplate/ShopDetailWithImg';
 import SideNavigator from './BaseTemplate/SideNavigator';
+import { ScrollToTop } from '../components/UIComponents/ScrollToTop';
+import { Meta } from '../layout/Meta';
+import { AppConfig } from '../utils/AppConfig';
 
 function ShopBase() {
   return (
