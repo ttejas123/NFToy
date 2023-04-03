@@ -20,7 +20,11 @@ const OurWork = () => {
               className="masonry-item transform hover:scale-105 transition ease-in-out"
             >
               <a href={val}>
-                <img src={val} className="rounded-lg" />
+                <img
+                  alt={`OurWorkMap ${index}`}
+                  src={val}
+                  className="rounded-lg"
+                />
               </a>
             </div>
           );

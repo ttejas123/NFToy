@@ -58,6 +58,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
         </div>
       </div>
       <img
+        alt="VeriticalFeatureRow"
         src={`${router.basePath}${props.bgRight}`}
         className=" absolute w-80 -z-50 -top-10 -right-7"
       />
