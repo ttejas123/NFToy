@@ -42,7 +42,7 @@ const Section = (props: ISectionProps) => {
           )}
         </div>
       )}
-      <div data-aos="slide-right">{props.children}</div>
+      <div data-aos="slide-right bg-">{props.children}</div>
     </div>
   );
 };
