@@ -1,6 +1,6 @@
-import { NextSeo } from 'next-seo';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import { NextSeo } from 'next-seo';
 
 import { AppConfig } from '../utils/AppConfig';
 
@@ -47,11 +47,7 @@ const Meta = (props: IMetaProps) => {
           key="favicon"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Arimo:ital@1&display=swap"
           rel="stylesheet"
